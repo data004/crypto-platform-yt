@@ -23,6 +23,8 @@ const mockPortfolio = {
   riskScore: 65,
   volatility: 12.5,
   sharpeRatio: 2.1,
+  allTimeHigh: 130000.00, // Added to satisfy TypeScript
+  allTimeLow: 90000.00,    // Added to satisfy TypeScript
 };
 
 // Added empty arrays/objects to satisfy the TypeScript interface
