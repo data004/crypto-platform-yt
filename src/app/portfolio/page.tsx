@@ -1,6 +1,6 @@
 "use client";
 
-import PortfolioPageClient from "@/components/portfolio/PortfolioPageClient";
+import PortfolioPageClient from "../../components/portfolio/PortfolioPageClient";
 
 // Mock data for initial development
 const mockPortfolio = {
