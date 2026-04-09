@@ -23,23 +23,17 @@ const mockPortfolio = {
   riskScore: 65,
   volatility: 12.5,
   sharpeRatio: 2.1,
-  allTimeHigh: 130000.00, // Added to satisfy TypeScript
-  allTimeLow: 90000.00,    // Added to satisfy TypeScript
+  allTimeHigh: 130000.00,
+  allTimeLow: 90000.00,
 };
 
-// Added empty arrays/objects to satisfy the TypeScript interface
 export default function PortfolioPage() {
   return (
     <PortfolioPageClient 
       portfolio={mockPortfolio} 
       holdings={[]} 
       performanceData={[]} 
-      metrics={{
-        volatility: mockPortfolio.volatility,
-        sharpeRatio: mockPortfolio.sharpeRatio,
-        maxDrawdown: 0,
-        winRate: 0
-      }}
+      metrics={mockPortfolio}
     />
   );
 }
